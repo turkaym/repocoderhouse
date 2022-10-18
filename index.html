@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tano "Frutos Secos"</title>
+    <!--FUENTE DE LETRA SELECCIONADA-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Raleway:ital,wght@0,600;1,400&display=swap" rel="stylesheet"> 
+   <!-- ANIMACION CON SCROLL-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- EL CSS SIEMPRE VA A LO ULTIMO DEL CIERRE-->
+    <link rel="stylesheet" href="./estilos/css/styles.css">
+
+</head>
+<body>
+    <header class="header header--gradient">
+        <!--PARA QUE EL LOGO ME LLEVE AL INICIO AL HACER CLICK-->
+        <a href="#"><img src="./images/logo-salomon-frutos-secos-PNG.png" alt="EL TANO " class="header__logo rotate-scale-down"></a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__anchor" href="./vistas/nosotros.html">Nosotros</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/propuesta_informativa.html">Propuesta</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/proyecto.html">Proyecto</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section class="hero">
+          <div class="hero__wrapper">
+            <h1 class="hero__heading">BIENVENIDOS A ¨EL TANO¨</h1>
+            <p class="hero__slogan">Somos vendedores de comida saludable</p>
+            <a class="btn" href="./vistas/propuesta_informativa.html">CONOZCANOS</a>
+          </div> 
+        </section>
+        <section class="info">
+            <div class="infocard" data-aos="fade-up">
+                <img class="infocard__img" src="./images/pistacho.JPG" alt="Pistachos">
+                <h2 class="infocard__titulo" >Info 1</h2>
+                <p class="infocard__desc" >Los pistachos son uno de los frutos secos con más reputación y que cuenta con un sabor más peculiar y aprovechable para disfrutar solo o en diversas preparaciones. Así, se suele usar como aperitivo, en ensaladas, salsas, helados, postres –hay quién incluso lo echa al café– o en recetas de asados, y es que su color verdoso da color y dota de grandes nutrientes a los platos.</p>
+                <a class="btn" href="./vistas/propuesta_informativa.html">Propuesta</a>
+            </div>
+            <div class="infocard" data-aos="fade-up">
+                <img class="infocard__img" src="./images/almendra.JPG" alt="A lmendras">
+                <h2 class="infocard__titulo">Info 2</h2>
+                <p class="infocard__desc">La almendra es el fruto del almendro. Posee una película de color canela que la envuelve además de una cáscara exterior que no es comestible, que representa un peso importante de la almendra, y una piel verde que se va secando. Por ello la parte comestible de este se reduce al 40 % es decir solo la semilla.​</p>
+                <a class="btn" href="./vistas/proyecto.html">Proyecto</a>
+            </div>
+            <div class="infocard" data-aos="fade-up">
+                <img class="infocard__img" src="./images/nuez.JPG" alt="Nueces">
+                <h2 class="infocard__titulo">Info 3</h2>
+                <p class="infocard__desc" >En botánica, el término nuez se aplica a un fruto seco indehiscente, monospermo y con un pericarpio duro que deriva de un ovario ínfero cuya pared está endurecida.​ Se encuentran nueces en géneros botánicos del orden de las Fagales, por ejemplo: Avellanas Bellotas Castañas</p>
+                <a class="btn" href="./vistas/contacto.html">Contacto</a>
+            </div>
+        </section>
+    </main>
+    <section class="video">
+        <h3>HAGAMOS FLUIR NUESTRAS IDEAS</h3>
+        <div>
+            <video id="background-video" autoplay loop muted poster="./images/videonuez.mp4"></video>
+            <source src="./images/videonuez.mp4" type="video/mp4">
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./vistas/proyecto.html">Proyecto</a></li>
+                <li><a href="./vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav> 
+    </footer>
+    <!-- ANIMACION -->
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

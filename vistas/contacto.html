@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+     <!--FUENTE DE LETRA SELECCIONADA-->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Raleway:ital,wght@0,600;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../estilos/css/styles.css">
+</head>
+<body>
+    <header>
+        <!--PARA QUE EL LOGO ME LLEVE AL INICIO AL HACER CLICK-->
+        <a href="../index.html"><img src="../images/logo-salomon-frutos-secos-PNG.png" alt="EL TANO FRUTOS SECOS"></a>
+        
+        <ul>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./propuesta_informativa.html">Propuesta</a></li>
+            <li><a href="./proyecto.html">Proyecto</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <hr>
+    <!--FORMULARIOS-->
+    <form action="#" method="GET" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Informacion Personal</legend> 
+        <dir>
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+        </dir>
+        <div>
+            <label for="email">Email</label>
+            <input type="enamil" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="age">Edad</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="5">
+        </div>
+        <div>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" id="date" min="2019-06-10">
+        </div>
+        <div>
+            <strong>Fruta favorita</strong>
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana"> 
+            </div>
+            <div>
+                <label for="apple">Manzana</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+        </div>
+        <div>
+            <strong>Genero</strong>
+            <div>
+                <label for="male">Masculino</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Femenino</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+     </fieldset>
+     <fieldset>
+        <legend>Informacion Tributaria</legend> 
+            <div>
+                <label for="eyeColor">Color de ojos</label>
+                <select name="eyeColor" id="eyeColor" multiple>
+                    <option value="green" label="green"></option>
+                    <option value="blue" label="blue"></option>
+                    <option value="brown" label="brown"></option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio"></textarea>
+            </div>
+            <div>
+                <label for="file">Subir archivo</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" id="password" rerquired>
+            </div>
+        </fieldset>       
+            <input type="reset" value="Reiniciar formulario">
+            <input type="submit" value="Enviar formulario">
+        </div>     
+    </form>
+</body>
+</html>

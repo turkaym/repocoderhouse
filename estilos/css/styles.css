@@ -1,0 +1,304 @@
+
+/* RESET UNIVERSAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* FIN RESET UNIVERSAL */
+
+
+/* CLASES UTILITARIAS*/
+
+.btn{
+    background-color: pink;
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.rotate-scale-down {
+	-webkit-animation: rotate-scale-down 0.9s linear both;
+	        animation: rotate-scale-down 0.9s linear both;
+}
+
+/* FIN CLASES UTILITARIAS */
+
+/* ANIMACIONES */
+
+ @-webkit-keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+              transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+              transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+
+
+
+/* HEADER */
+
+.header{
+    background-color:  #f2f3f4 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+
+}
+
+
+.header__logo{
+    max-width: 200px;
+
+}
+
+.header__nav{
+
+}
+
+.header__list{
+    display: inline-flex;
+    padding: 1rem;
+    margin: 0.5rem;
+    
+}
+
+.header__item{
+    padding: 1rem 0.5rem;
+    background-color:  #f2f3f4 ;
+   
+
+}
+
+.header__anchor{
+
+}
+ 
+/* HEADER FIN */
+
+
+
+:root{
+    font-size: 16px;
+}
+
+/* HERO */
+
+.hero{
+    background-image: url("../../images/nuez_fondoblanco.jpg");
+    background-position: center left;
+    background-size: cover;
+    color: black;
+    font-size: 1rem;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10rem;
+    flex-direction: column;
+}
+
+.hero__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero__heading{
+    color: pink;
+ 
+}
+
+.hero__slogan{
+    font-size: 0,5rem;
+}
+
+/* HERO FIN */
+
+/* INFOCARD */
+
+.info{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.infocard{
+    color: blueviolet;
+    background-color: white;
+    padding: 1rem 2rem;
+    position: relative;   
+    flex-basis: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.infocard__img{
+    width: 100%;
+}
+
+.infocard__titulo{
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+
+}
+
+.infocard__desc{
+    margin-top: 1rem;
+}
+
+/* FIN INFOCARD */
+
+.video{
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background-video{
+    width: 100%;
+    height: 100%;
+}
+
+.video h3 {
+    position: absolute;
+}
+
+/* NOSOTROS */
+
+.block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.block__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: black;
+}
+
+.block__heading {
+text-align: center;
+
+}
+
+
+.member {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    background-color: cadetblue;
+   
+}
+
+.member__title {
+    font-family: 'inter', sans-serif;
+}
+
+.member__img{
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+/* MAX-WIDTH 320 - HASTA 320 */
+
+@media screen and (max-width:320px) {
+   .header{
+    flex-direction: column;
+   }
+
+   .header__list {
+	display: flex;
+	flex-direction: column; 
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .hero__heading{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .hero__slogan {
+        text-align: center;
+    }
+
+    .hero__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    
+    .block {
+        grid-template-columns: 1fr;
+        padding: 0%;
+    }
+        
+    .block__wrapper {
+        padding: 1rem;
+
+    }
+
+    
+  
+}
+
+
